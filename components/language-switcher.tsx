@@ -1,6 +1,6 @@
 'use client';
 
-import {useRouter} from "next/navigation";
+import {useRouter, usePathname} from "next/navigation";
 import {useState, useRef, useEffect} from "react";
 
 const locales = [
@@ -16,11 +16,10 @@ const locales = [
 
 export function LanguageSwitcher({current}: {current: string}) {
   const router = useRouter();
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
-
-
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -56,8 +55,18 @@ export function LanguageSwitcher({current}: {current: string}) {
   }, []);
 
   const handleLanguageChange = (code: string) => {
-    // Direct navigation to the new language root
-    router.push(`/${code}`);
+    if (code === current) {
+      setIsOpen(false);
+      return;
+    }
+
+    // Construct the new path by replacing the locale segment
+    // pathname example: "/en/about" -> ["", "en", "about"]
+    const segments = pathname.split('/');
+    segments[1] = code;
+    const newPath = segments.join('/') || `/${code}`;
+    
+    router.push(newPath);
     setIsOpen(false);
   };
 
@@ -97,4 +106,3 @@ export function LanguageSwitcher({current}: {current: string}) {
     </div>
   );
 }
-

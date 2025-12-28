@@ -361,7 +361,7 @@ export default function HomePage({
           <div className="flex items-center gap-4">
             <div className="flex gap-3">
               <Button variant="outline" className="border-blue-500 text-white hover:bg-blue-500/20" size="sm">
-                获取报价
+                {t('nav.quote')}
               </Button>
               <Button size="sm" className="bg-blue-600 hover:bg-blue-500 text-white font-medium">
                 WhatsApp
@@ -554,7 +554,7 @@ export default function HomePage({
                     ))}
                   </select>
                   <Button type="submit" size="sm" variant="outline" className="border-slate-700 text-slate-100">
-                    应用筛选
+                    {t('filters.apply')}
                   </Button>
                 </form>
               </div>
@@ -562,11 +562,11 @@ export default function HomePage({
               <div className="grid gap-6 md:grid-cols-3">
                 {items.length === 0 && searchQuery ? (
                   <div className="col-span-full rounded-2xl border border-white/10 bg-slate-950/80 p-12 text-center">
-                    <p className="text-lg font-semibold text-white">没有找到匹配的车辆</p>
+                    <p className="text-lg font-semibold text-white">{t('vehicles.noResults')}</p>
                     <p className="mt-2 text-sm text-slate-400">
                       尝试使用不同的关键词或 {
                         <Link href={`/${params.locale}#featured`} className="text-blue-400 hover:underline">
-                          清除筛选条件
+                          {t('vehicles.clearFilters')}
                         </Link>
                       }
                     </p>
@@ -592,14 +592,14 @@ export default function HomePage({
                           />
                         ) : (
                           <div className="flex h-full items-center justify-center text-sm text-slate-400">
-                            暂无图片
+                            {t('featured.noImage')}
                           </div>
                         )}
                         <div className="absolute left-3 top-3 flex gap-2 text-xs">
                           <span className="rounded-full bg-blue-500/80 px-3 py-1 font-semibold text-white">{statusLabel}</span>
                           {certs > 0 && (
                             <span className="rounded-full bg-emerald-500/80 px-3 py-1 font-semibold text-white">
-                              {certs} 证书
+                              {certs} {t('detail.items')}
                             </span>
                           )}
                         </div>
@@ -630,7 +630,7 @@ export default function HomePage({
                       <QuickInquiryButton vehicleName={title} vehicleId={v.id} />
                       <Link href={`/${params.locale}/vehicles/${v.id}`}>
                         <Button size="sm" variant="outline" className="border-blue-500 text-white hover:bg-blue-500/20 font-medium">
-                          查看详情
+                          {t('featured.cta.details')}
                         </Button>
                       </Link>
                     </div>
@@ -647,7 +647,7 @@ export default function HomePage({
                   className="rounded-lg border border-white/10 px-4 py-2 text-sm text-white transition hover:border-white/40 hover:bg-white/5 disabled:pointer-events-none disabled:opacity-40"
                   aria-disabled={currentPage <= 1}
                 >
-                  上一页
+                  {t('pagination.prev')}
                 </Link>
                 <span className="text-sm text-slate-300">
                   {currentPage} / {totalPages}
@@ -657,7 +657,7 @@ export default function HomePage({
                   className="rounded-lg border border-white/10 px-4 py-2 text-sm text-white transition hover:border-white/40 hover:bg-white/5 disabled:pointer-events-none disabled:opacity-40"
                   aria-disabled={currentPage >= totalPages}
                 >
-                  下一页
+                  {t('pagination.next')}
                 </Link>
               </div>
             </div>

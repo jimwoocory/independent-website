@@ -11,7 +11,8 @@ export default async function LocaleLayout({
 }) {
   let messages;
   try {
-    messages = (await import(`../../messages/${params.locale}.json`)).default;
+    // Use a more robust way to load messages
+    messages = (await import(`@/messages/${params.locale}.json`)).default;
   } catch (error) {
     console.error(`Failed to load messages for locale ${params.locale}:`, error);
     notFound();
@@ -23,4 +24,3 @@ export default async function LocaleLayout({
     </CustomTranslationsProvider>
   );
 }
-
