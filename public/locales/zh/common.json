@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "vehicles": "整车展示",
+    "solutions": "解决方案",
+    "resources": "资源中心",
+    "contact": "联系我们",
+    "quote": "获取报价"
+  },
+  "hero": {
+    "title": "专业汽车出口平台",
+    "subtitle": "为全球市场提供高品质车辆和可靠服务",
+    "contactLine": "我们说您的语言",
+    "ctaPrimary": "浏览车辆",
+    "ctaSecondary": "联系我们",
+    "stats": {
+      "countries": "覆盖国家",
+      "vehicles": "车辆数量",
+      "response": "响应时间"
+    },
+    "social": {
+      "title": "关注我们",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
+    }
+  },
+  "filters": {
+    "all": "全部",
+    "suv": "SUV",
+    "pickup": "皮卡",
+    "sedan": "轿车",
+    "ev": "新能源",
+    "active": "活跃",
+    "new": "新品",
+    "fast": "快速交付",
+    "any": "任意",
+    "sort": {
+      "newest": "最新发布",
+      "priceAsc": "价格从低到高",
+      "priceDesc": "价格从高到低"
+    },
+    "price": "价格范围",
+    "priceMin": "最低价格",
+    "priceMax": "最高价格",
+    "clear": "清除筛选",
+    "apply": "应用筛选"
+  }
+}

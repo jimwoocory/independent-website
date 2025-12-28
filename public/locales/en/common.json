@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "vehicles": "Vehicles",
+    "solutions": "Solutions",
+    "resources": "Resources",
+    "contact": "Contact",
+    "quote": "Get Quote"
+  },
+  "hero": {
+    "title": "Professional Auto Export Platform",
+    "subtitle": "High-quality vehicles and reliable services for global markets",
+    "contactLine": "We speak your language",
+    "ctaPrimary": "Browse Vehicles",
+    "ctaSecondary": "Contact Us",
+    "stats": {
+      "countries": "Countries",
+      "vehicles": "Vehicles",
+      "response": "Response Time"
+    },
+    "social": {
+      "title": "Follow Us",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
+    }
+  },
+  "filters": {
+    "all": "All",
+    "suv": "SUV",
+    "pickup": "Pickup",
+    "sedan": "Sedan",
+    "ev": "Electric",
+    "active": "Active",
+    "new": "New",
+    "fast": "Fast Delivery",
+    "any": "Any",
+    "sort": {
+      "newest": "Newest",
+      "priceAsc": "Price: Low to High",
+      "priceDesc": "Price: High to Low"
+    },
+    "price": "Price",
+    "priceMin": "Min Price",
+    "priceMax": "Max Price",
+    "clear": "Clear Filters",
+    "apply": "Apply Filters"
+  }
+}

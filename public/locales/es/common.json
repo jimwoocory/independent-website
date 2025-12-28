@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre nosotros",
+    "vehicles": "Vehículos",
+    "solutions": "Soluciones",
+    "resources": "Recursos",
+    "contact": "Contacto",
+    "quote": "Obtener cotización"
+  },
+  "hero": {
+    "title": "Plataforma profesional de exportación de automóviles",
+    "subtitle": "Vehículos de alta calidad y servicios confiables para mercados globales",
+    "contactLine": "Hablemos tu idioma",
+    "ctaPrimary": "Ver vehículos",
+    "ctaSecondary": "Contactarnos",
+    "stats": {
+      "countries": "Países",
+      "vehicles": "Vehículos",
+      "response": "Tiempo de respuesta"
+    },
+    "social": {
+      "title": "Síguenos",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
+    }
+  },
+  "filters": {
+    "all": "Todos",
+    "suv": "SUV",
+    "pickup": "Camioneta",
+    "sedan": "Sedán",
+    "ev": "Eléctrico",
+    "active": "Activo",
+    "new": "Nuevo",
+    "fast": "Entrega rápida",
+    "any": "Cualquiera",
+    "sort": {
+      "newest": "Más nuevos",
+      "priceAsc": "Precio: Bajo a Alto",
+      "priceDesc": "Precio: Alto a Bajo"
+    },
+    "price": "Precio",
+    "priceMin": "Precio mínimo",
+    "priceMax": "Precio máximo",
+    "clear": "Limpiar filtros",
+    "apply": "Aplicar filtros"
+  }
+}
