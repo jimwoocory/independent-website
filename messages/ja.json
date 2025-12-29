@@ -143,7 +143,6 @@
   "vehicles.loadError": "車両の読み込みに失敗しました",
   "vehicles.clearFilters": "すべてのフィルターをクリア",
 
-
   "search.placeholder": "ブランド、モデルで検索...",
   "search.results": "{count}件の結果が見つかりました",
   "search.noResults": "検索に一致する車両が見つかりません",
@@ -196,5 +195,20 @@
 
   "resources.cta.title": "お探しのものが見つかりませんか？",
   "resources.cta.subtitle": "当社の輸出スペシャリストがカスタムお問い合わせをサポートする準備ができています",
-  "resources.cta.button": "エキスパートチームに連絡"
+  "resources.cta.button": "エキスパートチームに連絡",
+
+  "floating.toggle": "連絡メニューを開く",
+  "floating.whatsapp": "WhatsApp",
+  "floating.whatsapp.message": "こんにちは、あなたの車両に興味があります！",
+  "floating.phone": "電話",
+  "floating.email": "メール",
+  "floating.email.subject": "車両に関するお問い合わせ",
+  "floating.wechat": "WeChat",
+  "floating.wechat.scan": "スキャンして追加",
+
+  "quickInquiry.title": "迅速なお問い合わせ",
+  "quickInquiry.send": "お問い合わせを送信",
+  "quickInquiry.sending": "送信中...",
+  "quickInquiry.success": "お問い合わせが正常に送信されました！",
+  "quickInquiry.cancel": "キャンセル"
 }

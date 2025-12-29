@@ -196,5 +196,20 @@
 
   "resources.cta.title": "Não Encontrou o Que Precisa?",
   "resources.cta.subtitle": "Nossos especialistas em exportação estão prontos para ajudá-lo com consultas personalizadas",
-  "resources.cta.button": "Contatar Equipe de Especialistas"
+  "resources.cta.button": "Contatar Equipe de Especialistas",
+
+  "floating.toggle": "Abrir menu de contato",
+  "floating.whatsapp": "WhatsApp",
+  "floating.whatsapp.message": "Olá, estou interessado em seus veículos!",
+  "floating.phone": "Ligar",
+  "floating.email": "E-mail",
+  "floating.email.subject": "Consulta de veículo",
+  "floating.wechat": "WeChat",
+  "floating.wechat.scan": "Escaneie para adicionar",
+
+  "quickInquiry.title": "Consulta Rápida",
+  "quickInquiry.send": "Enviar consulta",
+  "quickInquiry.sending": "Enviando...",
+  "quickInquiry.success": "Consulta enviada com sucesso!",
+  "quickInquiry.cancel": "Cancelar"
 }

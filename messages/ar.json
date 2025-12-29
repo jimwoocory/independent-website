@@ -196,5 +196,20 @@
 
   "resources.cta.title": "لم تجد ما تبحث عنه؟",
   "resources.cta.subtitle": "خبراء التصدير لدينا جاهزون لمساعدتك في الاستفسارات المخصصة",
-  "resources.cta.button": "اتصل بفريق الخبراء"
+  "resources.cta.button": "اتصل بفريق الخبراء",
+
+  "floating.toggle": "فتح قائمة الاتصال",
+  "floating.whatsapp": "واتساب",
+  "floating.whatsapp.message": "مرحبًا، أنا مهتم بسياراتكم!",
+  "floating.phone": "اتصال هاتفي",
+  "floating.email": "اتصال بالبريد الإلكتروني",
+  "floating.email.subject": "استفسار عن المركبات",
+  "floating.wechat": "وي تشات",
+  "floating.wechat.scan": "امسح للإضافة",
+
+  "quickInquiry.title": "استفسار سريع",
+  "quickInquiry.send": "إرسال الاستفسار",
+  "quickInquiry.sending": "جاري الإرسال...",
+  "quickInquiry.success": "تم إرسال الاستفسار بنجاح!",
+  "quickInquiry.cancel": "إلغاء"
 }

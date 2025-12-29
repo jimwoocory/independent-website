@@ -190,11 +190,26 @@
   "resources.faq.categories.payment.title": "Оплата и Финансы",
   "resources.faq.categories.payment.description": "Условия оплаты, валюты и опции",
   "resources.faq.categories.customs.title": "Таможня и Соответствие",
-  "resources.faq.categories.customs.description": "Правила импорта и документация",
+  "resources.faq.categories.customs.description": "Регулирования импорта и документация",
   "resources.faq.categories.warranty.title": "Гарантия и Поддержка",
   "resources.faq.categories.warranty.description": "Послепродажное обслуживание и гарантии",
 
   "resources.cta.title": "Не Нашли То, Что Нужно?",
   "resources.cta.subtitle": "Наши специалисты по экспорту готовы помочь вам с индивидуальными запросами",
-  "resources.cta.button": "Связаться с Командой Экспертов"
+  "resources.cta.button": "Связаться с Командой Экспертов",
+
+  "floating.toggle": "Открыть меню контакта",
+  "floating.whatsapp": "WhatsApp",
+  "floating.whatsapp.message": "Привет, я заинтересован в ваших автомобилях!",
+  "floating.phone": "Позвонить",
+  "floating.email": "Эл. почта",
+  "floating.email.subject": "Запрос об автомобиле",
+  "floating.wechat": "WeChat",
+  "floating.wechat.scan": "Сканировать для добавления",
+
+  "quickInquiry.title": "Быстрый Запрос",
+  "quickInquiry.send": "Отправить запрос",
+  "quickInquiry.sending": "Отправка...",
+  "quickInquiry.success": "Запрос отправлен успешно!",
+  "quickInquiry.cancel": "Отмена"
 }
