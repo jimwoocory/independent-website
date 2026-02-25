@@ -29,61 +29,33 @@ type VehicleRow = Database["public"]["Tables"]["vehicles"]["Row"] & {
 };
 
 const fallback: VehicleRow = {
-  id: "mg5-2026",
-  name_i18n: {
-    en: "MG5 2026 180DVVT Global Luxury",
-    zh: "名爵 MG5 2026款 180DVVT 全球豪华版",
-    es: "MG5 2026 180DVVT Lujo Global",
-    ar: "MG5 2026 180DVVT الفاخرة العالمية"
-  },
+  id: "mock-detail",
+  name_i18n: {en: "Toyota Land Cruiser 300", zh: "兰德酷路泽 300", es: "Toyota Land Cruiser 300", ar: "تويوتا لاند كروزر 300"},
   description_i18n: {
-    en: "The MG5 2026 180DVVT Global Luxury is a stylish compact sedan with excellent fuel efficiency, perfect for export to global markets. Features include: 1.5L DVVT engine, CVT transmission, advanced safety system, and premium interior.",
-    zh: "名爵MG5 2026款180DVVT全球豪华版，一款时尚紧凑型轿车，燃油经济性出色，非常适合出口全球市场。配备：1.5L DVVT发动机、CVT变速箱、先进安全系统、豪华内饰。"
+    en: "Flagship SUV with 4x4 drivetrain, ideal for Middle East and Africa export routes.",
   },
-  category: "Sedan",
+  category: "SUV",
   specifications: {
-    brand: "MG",
-    year: "2026",
-    model: "MG5",
-    engine: "1.5L 180DVVT",
-    transmission: "CVT",
-    drive: "FWD",
-    fuel: "Petrol",
-    mileage: "0",
-    color: "Multiple colors available",
-    power: "120HP",
-    torque: "150N·m",
-    fuelEconomy: "5.8L/100km",
-    length: "4675mm",
-    width: "1842mm",
-    height: "1480mm",
-    wheelbase: "2680mm",
-    cargo: "485L"
+    power: "3.5T V6",
+    drive: "4WD",
+    transmission: "AT",
+    seats: 7,
   },
-  price_range_min: 9000,
-  price_range_max: 11500,
+  price_range_min: 68000,
+  price_range_max: 82000,
   status: "active",
   created_at: null,
   vehicle_images: [
-    {url: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1400&q=80", is_cover: true, display_order: 1},
-    {url: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80", is_cover: false, display_order: 2},
-    {url: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80", is_cover: false, display_order: 3},
-    {url: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80", is_cover: false, display_order: 4},
+    {url: "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1400&q=80", is_cover: true, display_order: 1},
+    {url: "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=80", is_cover: false, display_order: 2},
   ],
   certificates: [
     {
       id: "cert-1",
-      title_i18n: {en: "GCC Conformity Certificate", zh: "GCC合格证书"},
+      title_i18n: {en: "GCC Conformity"},
       pdf_url: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
       issue_date: "2024-01-01",
       expiry_date: "2026-01-01",
-    },
-    {
-      id: "cert-2",
-      title_i18n: {en: "Export Certificate", zh: "出口证书"},
-      pdf_url: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-      issue_date: "2024-01-01",
-      expiry_date: "2027-01-01",
     },
   ],
 };
@@ -108,14 +80,8 @@ async function fetchVehicle(id: string) {
   // 本地开发无Supabase时自动启用fallback
   const enableFallback = !isSupabaseConfigured || (process.env.NODE_ENV !== 'production' && process.env.ENABLE_FALLBACK === 'true');
   
-  // 测试数据：根据ID返回对应的fallback
-  const testVehicles: Record<string, VehicleRow> = {
-    "mg5-2026": fallback,
-  };
-  
   if (enableFallback) {
-    // 如果有对应的测试数据就返回，否则用默认fallback
-    return testVehicles[id] || fallback;
+    return fallback;
   }
   
   try {
