@@ -38,6 +38,39 @@ type Props = {
 // 本地无 Supabase 时的兜底数据
 const fallbackVehicles = [
   {
+    id: "mg5-2026",
+    name_i18n: {
+      en: "MG5 2026 180DVVT Global Luxury",
+      zh: "名爵 MG5 2026款 180DVVT 全球豪华版",
+      es: "MG5 2026 180DVVT Lujo Global",
+      ar: "MG5 2026 180DVVT الفاخرة العالمية"
+    },
+    description_i18n: {
+      en: "The MG5 2026 180DVVT Global Luxury is a stylish compact sedan with excellent fuel efficiency, perfect for export to global markets. Features include: 1.5L DVVT engine, CVT transmission, advanced safety system, and premium interior.",
+      zh: "名爵MG5 2026款180DVVT全球豪华版，一款时尚紧凑型轿车，燃油经济性出色，非常适合出口全球市场。配备：1.5L DVVT发动机、CVT变速箱、先进安全系统、豪华内饰。"
+    },
+    category: "Sedan",
+    price_range_min: 9000,
+    price_range_max: 11500,
+    status: "active",
+    created_at: new Date().toISOString(),
+    specifications: {
+      brand: "MG",
+      year: "2026",
+      model: "MG5",
+      engine: "1.5L 180DVVT",
+      transmission: "CVT",
+      drive: "FWD",
+      fuel: "Petrol",
+      mileage: "0",
+      color: "Multiple colors available"
+    },
+    vehicle_images: [
+      {url: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1400&q=80", is_cover: true},
+      {url: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80", is_cover: false}
+    ],
+  },
+  {
     id: "demo-suv",
     name_i18n: {en: "Demo SUV", zh: "演示SUV"},
     description_i18n: {en: "Comfortable SUV", zh: "舒适型SUV"},
